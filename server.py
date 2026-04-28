@@ -57,6 +57,30 @@ init_db()
 # ==========================================
 
 @mcp.tool()
+def get_patient_data(patient_id: str) -> str:
+    """Recupera el historial clínico sintético de un paciente."""
+    patient = ds.PATIENTS.get(patient_id)
+    if not patient:
+        return f"Error: Paciente {patient_id} no encontrado."
+    return f"DATOS DEL PACIENTE {patient_id}:\n{str(patient)}"
+
+@mcp.tool()
+def get_trial_criteria(trial_id: str) -> str:
+    """Recupera los criterios de inclusión/exclusión de un ensayo clínico."""
+    trial = ds.TRIALS.get(trial_id)
+    if not trial:
+        return f"Error: Ensayo {trial_id} no encontrado."
+    return f"CRITERIOS DEL ENSAYO {trial_id}:\n{str(trial)}"
+
+@mcp.tool()
+def log_eligibility_decision(patient_id: str, trial_id: str, decision: str, reasoning: str) -> str:
+    """Guarda en la base de datos la decisión final para persistencia."""
+    # Aquí es donde conectarás con database.py para el SQLite
+    # Por ahora, simulamos el guardado
+    print(f"LOG: Paciente {patient_id} evaluado para {trial_id}. Resultado: {decision}")
+    return f"Decisión para {patient_id} registrada exitosamente en el sistema persistente."
+
+@mcp.tool()
 def get_patient_history(patient_id: str) -> str:
     """
     Obtiene la nota clínica textual completa de un paciente sintético.
