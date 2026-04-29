@@ -1,0 +1,63 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "E4107",
+                "name": [
+                    {
+                        "text": "Camila Lopez"
+                    }
+                ],
+                "birthDate": "1987-09-12",
+                "gender": "female"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "code": {
+                    "text": "Type 2 Diabetes Mellitus"
+                },
+                "recordedDate": "2017-05-20"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "code": {
+                    "text": "HbA1c"
+                },
+                "valueQuantity": {
+                    "value": 8.1,
+                    "unit": "%"
+                },
+                "effectiveDateTime": "2025-07-12"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "code": {
+                    "text": "BMI"
+                },
+                "valueQuantity": {
+                    "value": 34.3,
+                    "unit": "kg/m²"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "medicationCodeableConcept": {
+                    "text": "Metformin HCL 1000 mg BID"
+                },
+                "effectivePeriod": {
+                    "start": "2025-01-15"
+                }
+            }
+        }
+    ]
+}

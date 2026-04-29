@@ -1,0 +1,17 @@
+{
+    "trial_id": "NCT0xxxxxxx",
+    "title": "GLP-1 Candidate Trial",
+    "description": "A Phase III Trial of a Novel GLP-1 Receptor Agonist for Patients with Type 2 Diabetes on Metformin.",
+    "inclusion_criteria": [
+        "Age: 18 to 75 years",
+        "Confirmed diagnosis of Type 2 Diabetes Mellitus (T2DM)",
+        "HbA1c between 7.5% and 10.5% (inclusive)",
+        "Body Mass Index (BMI) >= 30 kg/m²",
+        "On a stable dose of metformin for at least 3 months prior to screening"
+    ],
+    "exclusion_criteria": [
+        "Currently pregnant, breastfeeding, or planning to conceive",
+        "Documented history of pancreatitis",
+        "Personal or family history of medullary thyroid carcinoma"
+    ]
+}
